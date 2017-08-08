@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common
 
 # Add Repo ppa:ondrej/php
-RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
+RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 
 # Install php common extension
 RUN apt-get update && \
