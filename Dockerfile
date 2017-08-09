@@ -24,8 +24,8 @@ RUN curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/
 # Install code intellisense
 # https://github.com/c9/c9.ide.language.codeintel
 RUN pip install -U virtualenv && \
-    virtualenv --python=python2 $HOME/.c9/python2 && \
-    source $HOME/.c9/python2/bin/activate && \
+    virtualenv --python=python2 /root/.c9/python2 && \
+    source /root/.c9/python2/bin/activate && \
     mkdir /tmp/codeintel && \
     pip download -d /tmp/codeintel codeintel==0.9.3 && \
     cd /tmp/codeintel && \
