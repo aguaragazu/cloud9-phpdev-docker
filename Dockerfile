@@ -11,13 +11,13 @@ RUN apt-get update && \
 # zip and unzip is essential component for composer to run 
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update && \
-    apt-get install -y php7.0 \
-                    php7.0-common \
-                    php7.0-pdo \
-                    php7.0-mysql \
-                    php7.0-curl \
-                    php7.0-mbstring \
-                    php7.0-xml \
+    apt-get install -y php5.6 \
+                    php5.6-common \
+                    php5.6-pdo \
+                    php5.6-mysql \
+                    php5.6-curl \
+                    php5.6-mbstring \
+                    php5.6-xml \
                     zip \
                     unzip
 
