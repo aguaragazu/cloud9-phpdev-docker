@@ -15,7 +15,8 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
                     php7.0-pdo \
                     php7.0-mysql \
                     php7.0-curl \
-                    php7.0-mbstring
+                    php7.0-mbstring \
+                    php7.0-xml
 
 # Install composer
 # how can a PHP developer miss the Composer :)
