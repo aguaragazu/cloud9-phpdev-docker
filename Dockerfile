@@ -8,6 +8,7 @@ RUN apt-get update && \
 
 # Add Repo ppa:ondrej/php
 # Install php common extension
+# zip and unzip is essential component for composer to run 
 RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update && \
     apt-get install -y php7.0 \
@@ -16,7 +17,9 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
                     php7.0-mysql \
                     php7.0-curl \
                     php7.0-mbstring \
-                    php7.0-xml
+                    php7.0-xml \
+                    zip \
+                    unzip
 
 # Install composer
 # how can a PHP developer miss the Composer :)
