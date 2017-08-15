@@ -7,7 +7,7 @@ For usage, please references to this project:
 
 # What's inside the box?
 
-- PHP 7.0 with common extensions, mbstring, mysql, pdo, curl
+- PHP 5.6 with common extensions, mbstring, mysql, pdo, curl
 - Composer
 - Node v8
 - Code autocompletion for Cloud9
